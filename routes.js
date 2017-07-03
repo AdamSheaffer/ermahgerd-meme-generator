@@ -16,7 +16,10 @@ const processText = async (req, res) => {
 
     try {
         const { data } = await getMemeUrl(ermahgerd);
-        return res.send(data.url);
+        return res.send({
+            text: data.url,
+            response_type: 'in_channel'
+        });
     } catch(err) {
         console.error(err);
         return res.send('Whoops! Looks like something went wrong...');
