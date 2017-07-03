@@ -11,7 +11,7 @@ const processText = async (req, res) => {
         const [data] = await transform(text);
         ermahgerd = data.text;
     } catch(err) {
-        const ermahgerd = '';
+        ermahgerd = '';
     }
 
     try {
