@@ -5,7 +5,7 @@ const { transform } = require('./transformationService');
 const router = express.Router();
 
 const processText = async (req, res) => {
-    const text = req.params.text;
+    const text = req.body.text;
     let ermahgerd;
     try {
         const [data] = await transform(text);
@@ -24,6 +24,6 @@ const processText = async (req, res) => {
     
 }
 
-router.get('/:text', processText);
+router.post('/', processText);
 
 module.exports = router;
