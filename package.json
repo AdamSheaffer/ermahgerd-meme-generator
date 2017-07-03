@@ -1,0 +1,23 @@
+{
+  "name": "ermahgerd_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "scripts": {
+    "prod": "node ./app.js",
+    "watch": "nodemon --inspect ./app.js --ignore public/",
+    "start": "npm run watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
