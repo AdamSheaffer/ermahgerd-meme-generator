@@ -7,9 +7,9 @@
     "node": ">= 7.6.0"
   },
   "scripts": {
-    "prod": "node ./app.js",
+    "start": "node ./app.js",
     "watch": "nodemon --inspect ./app.js --ignore public/",
-    "start": "npm run watch"
+    "dev": "npm run watch"
   },
   "author": "",
   "license": "ISC",
